@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+
+.cards-for-mobile {
+  display: none !important;
+}
+
+.shop-heading {
+  display: inline-block;
+  border-bottom: 1px solid #887315;
+  color: #fff;
+}
+
+.card-1 {
+  font-size: 1.2rem;
+  padding: 2em;
+  border: 0;
+  border-radius: 0.4em;
+  background-color: #e7e7e7;
+}
+
+.card-1 p,
+.card-1 h4,
+.card-2 h4 {
+  text-align: center;
+  line-height: 1em;
+  margin: 0;
+}
+
+.card-1 .first-p {
+  margin-bottom: 1em;
+}
+
+.mid-ps {
+  margin-bottom: 2em;
+}
+
+.bottom-ps {
+  margin-bottom: 1em;
+}
+
+.shop-card-price {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: black;
+  font-family: "Lato", sans-serif;
+  transition: 1s;
+}
+
+.card-2 {
+  font-size: 1.2rem !important;
+  padding: 1em 2em !important;
+  border: 0 !important;
+  border-radius: 0.4em !important;
+  background-color: #e7e7e7 !important;
+}
+
+.shop-card-title {
+  font-size: 1.2em !important;
+  line-height: 0.8em !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.shop-card-subtitle {
+  font-size: 0.85em !important;
+  line-height: 0.7em !important;
+  text-align: left !important;
+  margin-left: 8px !important;
+}
+
+.shop-card-para {
+  font-size: 0.6em !important;
+  margin: 0 !important;
+  text-align: left !important;
+  margin-left: 10px !important;
+  margin-top: 3px !important;
+}
+
+.first-para {
+  margin-top: 5px !important;
+}
+
+.card-max-height {
+  height: auto;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hover-bg-red {
+  transition: 0.4s !important;
+  margin-top: 10px !important;
+}
+
+.hover-bg-red:hover {
+  background-color: rgb(138, 0, 0) !important;
+  transform: scale(1.05);
+}
+
+.peer ~ .peer-p {
+  height: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.peer:checked ~ .peer-p {
+  display: block;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.peer:checked ~ .bg-gr {
+  background-color: grey !important;
+}
+
+.hamburger {
+  width: 30px;
+  display: none;
+  position: absolute;
+  left: 30px;
+}
+
+.hover-bg-black {
+  transition: 0.3s !important;
+}
+
+.hover-bg-black:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.for-sm {
+  display: none !important;
+}
+
+.hero__carousel {
+  padding: 15px 0 !important;
+}
+
+.hero__img__parent {
+  width: 330px;
+  height: auto;
+}
+
+.hero__img {
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.small-cards {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.flex-500 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+  .font-change {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .font-change {
+    font-size: 0.7rem !important;
+  }
+  .flex-500 {
+    display: flex;
+    align-items: start !important;
+    justify-content: space-between;
+  }
+  .for-big {
+    display: none !important;
+  }
+  .small-card {
+    height: 3rem !important;
+  }
+  .small-cards {
+    padding: 0 0.5rem !important;
+  }
+
+  .small-card-title {
+    font-size: 1rem !important;
+  }
+
+  .navbar-1 .nav-area {
+    display: none !important;
+  }
+
+  /* .hamburger {
+    display: block;
+  } */
+  .dropdown {
+    position: absolute !important;
+    left: 20px;
+    top: 20px;
+  }
+  .hero {
+    font-size: 0.8rem !important;
+  }
+
+  .faq-area {
+    width: 100% !important;
+  }
+
+  .banner {
+    width: 100% !important;
+  }
+
+  .align-center-1000 {
+    align-items: center !important;
+  }
+
+  /* .big-card {
+    height: auto !important;
+    flex-basis: 50%;
+  } */
+  .logo {
+    margin-left: 100px;
+  }
+  .cards-for-mobile {
+    display: block !important;
+  }
+  .cards-for-desktop {
+    display: none !important;
+  }
+  .for-sm {
+    display: block !important;
+  }
+  .mti-5 {
+    display: inline-block !important;
+    margin-top: 8px !important;
+  }
+  .dropdown {
+    margin-top: 8px;
+  }
+  .cart-icon {
+    /* width: 20px; */
+    position: absolute;
+    right: 20px;
+    top: 32px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .padd-10 {
+    padding: 0 !important;
+  }
+  .font-change {
+    font-size: 0.4rem !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .big-card-outside {
+    margin: 0;
+    padding: 0;
+  }
+  .big-card {
+    padding: 0 !important;
+    margin: 0 10px;
+    height: 250px !important;
+    flex-basis: 45%;
+    justify-self: start;
+  }
+
+  .font-change ul li {
+    font-size: 1.3em !important;
+    margin-top: 8px;
+  }
+  .font-change h1 {
+    margin: 0;
+    line-height: 1em !important;
+    width: 100% !important;
+  }
+  .card-max-height {
+    min-height: 250px;
+  }
+  .card-1,
+  .card-2 {
+    font-size: 1.2rem !important;
+    height: 300px;
+  }
+  .faq-table-text {
+    font-size: 0.8rem !important;
+  }
+  .small-card-title {
+    font-size: 0.7rem !important;
+  }
+  .hero {
+    padding: 0 10px !important;
+  }
+
+  .fs-10 {
+    font-size: 10px;
+  }
+
+  .align-center-1000 {
+    flex-direction: column !important;
+  }
+
+  .padd-10 {
+    padding: 10px !important;
+  }
+  .hamburger {
+    width: 20px;
+  }
+  .modeBtn {
+    width: 40px !important;
+    margin-top: 5px;
+  }
+  .big-card-outside {
+    font-size: 0.7rem !important;
+  }
+  .hero__img {
+    width: 120px !important;
+    height: auto !important;
+  }
+  .sm-b-50 {
+    flex-basis: 50% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 120px;
+  }
+  .big-card {
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .font-change {
+    font-size: 0.4rem !important;
+    margin: 0 10px !important;
+  }
+  .card-max-height {
+    min-height: 210px;
+  }
+  .flex-500 div {
+    width: 100% !important;
+  }
+  .card-1,
+  .card-2 {
+    font-size: 1rem !important;
+    padding: 0 10px !important;
+    height: 260px !important;
+  }
+  .faq-table-text {
+    font-size: 0.7rem !important;
+    padding: 4px 10px !important;
+  }
+  .small-card-title {
+    font-size: 0.5rem !important;
+  }
+  /* .big-card-outside {
+    flex-direction: column !important;
+  } */
+  .big-card {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .heroTextParent {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .small-card {
+    margin-top: 100px !important;
+  }
+  .hero__img__parent {
+    width: 100%;
+  }
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  object-fit: fill;
+}
+
+@media screen and (min-width: 650px) {
+  .hero-text {
+    font-size: 1.2em !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-text {
+    font-size: 1.3em !important;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    margin-left: 100px;
+  }
+  .dropdown img {
+    width: 50px;
+  }
+  .dropdown Button {
+    font-size: 0.7em;
+  }
+  .card-1,
+  .card-2 {
+    font-size: 0.8rem !important;
+    height: 220px !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .font-change {
+    font-size: 0.4em !important;
+    line-height: 0 !important;
+  }
+  .big-card {
+    height: 140px !important;
+  }
+  .dropdown {
+    margin-top: -12px !important;
+    margin-left: 0 !important;
+  }
+  .dropdown img {
+    height: 10px !important;
+    bottom: 15px !important;
+  }
+  .dropdown Button {
+    font-size: 0.4em !important;
+    margin-left: 1px !important;
+  }
+  .logo {
+    width: 100px !important;
+    margin-left: 55px !important;
+    height: 30px !important;
+  }
+  .cart-div img {
+    height: 20px;
+    margin-top: -12px;
+  }
+}
